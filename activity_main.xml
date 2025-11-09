@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Menu"
+        android:src="@drawable/ic_menu"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="TaxiClock"
+        android:textColor="#C5AA0E"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="18dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="260dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/taxi"
+        android:contentDescription="Logo" />
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#C5AA0E"
+        android:text="Vas-y"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"
+        android:clipToOutline="true"/>
+
+</RelativeLayout>
